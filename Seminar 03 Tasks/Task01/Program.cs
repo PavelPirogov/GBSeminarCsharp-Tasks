@@ -7,12 +7,12 @@
 // 12821 -> да
 
 Console.Write("Ведите пятизначное число ");
-string numText = Console.ReadLine();
+string? numText = Console.ReadLine();
 int num = Convert.ToInt32(numText);
 
 if (num < 100000 && num > 9999)
 {
-    if (numText[0] == numText[4] && numText[1] == numText[3])
+    if (numText![0] == numText[4] && numText[1] == numText[3])
     {
         Console.WriteLine("Это число палиндром");
     }
